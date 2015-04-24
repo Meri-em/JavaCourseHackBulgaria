@@ -1,0 +1,14 @@
+package com.corejava.collections.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class MyBoundedQueueTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

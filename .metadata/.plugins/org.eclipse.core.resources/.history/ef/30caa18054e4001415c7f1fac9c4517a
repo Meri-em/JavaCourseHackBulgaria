@@ -1,0 +1,8 @@
+import javax.xml.bind.JAXBContext;
+
+
+public class Main {
+	JAXBContext context = JAXBContext.newInstance(Student.class);
+	Marshaller m = context.createMarshaller();
+	
+}

@@ -1,0 +1,9 @@
+run RBIServer
+run RBIClient  (with agument host for example "127.0.0.1")
+
+Example input to RBIClient:
+ping -n 3 google.com
+<[EOM]>
+
+cmd /C dir
+<[EOM]>

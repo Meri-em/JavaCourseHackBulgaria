@@ -1,0 +1,20 @@
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+
+public class Main {
+	
+	public static void main(String[] args) throws JAXBException {
+		Student student = new Student();
+		student.setName("Gencho");
+		student.setStudentId(123);
+		
+		JAXBContext context = JAXBContext.newInstance(Student.class);
+		Marshaller m = context.createMarshaller();
+		m.marshal(student, System.out);
+		
+		
+	}
+	
+}

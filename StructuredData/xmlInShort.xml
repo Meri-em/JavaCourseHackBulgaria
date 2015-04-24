@@ -1,0 +1,127 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.8/ http://www.mediawiki.org/xml/export-0.8.xsd" version="0.8" xml:lang="en">
+  <siteinfo>
+    <sitename>Meta</sitename>
+    <base>http://meta.wikimedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.24wmf9</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Meta</namespace>
+      <namespace key="5" case="first-letter">Meta talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="200" case="first-letter">Grants</namespace>
+      <namespace key="201" case="first-letter">Grants talk</namespace>
+      <namespace key="202" case="first-letter">Research</namespace>
+      <namespace key="203" case="first-letter">Research talk</namespace>
+      <namespace key="204" case="first-letter">Participation</namespace>
+      <namespace key="205" case="first-letter">Participation talk</namespace>
+      <namespace key="206" case="first-letter">Iberocoop</namespace>
+      <namespace key="207" case="first-letter">Iberocoop talk</namespace>
+      <namespace key="208" case="first-letter">Programs</namespace>
+      <namespace key="209" case="first-letter">Programs talk</namespace>
+      <namespace key="470" case="first-letter">Schema</namespace>
+      <namespace key="471" case="first-letter">Schema talk</namespace>
+      <namespace key="480" case="first-letter">Zero</namespace>
+      <namespace key="481" case="first-letter">Zero talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="866" case="first-letter">CNBanner</namespace>
+      <namespace key="867" case="first-letter">CNBanner talk</namespace>
+      <namespace key="1198" case="first-letter">Translations</namespace>
+      <namespace key="1199" case="first-letter">Translations talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Larry Sanger/Columns</title>
+    <ns>0</ns>
+    <id>2</id>
+    <redirect title="User:Larry Sanger" />
+    <revision>
+      <id>152847</id>
+      <parentid>12</parentid>
+      <timestamp>2001-11-09T16:05:09Z</timestamp>
+      <contributor>
+        <username>Amqui</username>
+        <id>2</id>
+      </contributor>
+      <minor/>
+      <comment>*</comment>
+      <text id="152847" bytes="31" />
+      <sha1>jejioyhvn8odbggi9ntojiqwol9bhn8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Why a list of the senses of a word is not an encyclopedia article</title>
+    <ns>0</ns>
+    <id>7</id>
+    <revision>
+      <id>541572</id>
+      <parentid>152852</parentid>
+      <timestamp>2007-03-11T01:11:28Z</timestamp>
+      <contributor>
+        <username>Iamunknown</username>
+        <id>7089</id>
+      </contributor>
+      <comment>add Category:Unarchived historical pages</comment>
+      <text id="537500" bytes="7300" />
+      <sha1>kx5wzpwa8iurqyr5yer2pjw489bnjcp</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Why I am suspicious of subpages</title>
+    <ns>0</ns>
+    <id>8</id>
+    <revision>
+      <id>4098125</id>
+      <parentid>1149379</parentid>
+      <timestamp>2012-09-05T22:20:01Z</timestamp>
+      <contributor>
+        <username>Amqui</username>
+        <id>141073</id>
+      </contributor>
+      <minor/>
+      <comment>historical</comment>
+      <text id="4088953" bytes="14063" />
+      <sha1>hdctqj90zwjd1w8fm0s90zhih53k383</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Accidental linking and hard-wired category schemes</title>
+    <ns>0</ns>
+    <id>9</id>
+    <revision>
+      <id>310808</id>
+      <parentid>152854</parentid>
+      <timestamp>2006-03-24T21:16:38Z</timestamp>
+      <contributor>
+        <username>Linuxbeak</username>
+        <id>9460</id>
+      </contributor>
+      <comment>Categorized</comment>
+      <text id="309533" bytes="3788" />
+      <sha1>gwo92h3ialfnxrr8h8xl12ji98pu3vv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+</mediawiki>

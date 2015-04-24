@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<coreJavaCourse>
+    <courseId>6789</courseId>
+    <courseName>CoreJava</courseName>
+    <enrolledStudents>
+        <student>
+            <name>Darina Miteva</name>
+            <studentId>1129</studentId>
+        </student>
+        <student>
+            <name>Nikola Dimitrov</name>
+            <studentId>1160</studentId>
+        </student>
+        <student>
+            <name>Miroslav Nenov</name>
+            <studentId>1180</studentId>
+        </student>
+    </enrolledStudents>
+</coreJavaCourse>

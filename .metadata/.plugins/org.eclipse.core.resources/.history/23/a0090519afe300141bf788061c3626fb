@@ -1,0 +1,32 @@
+package com.corejava.collections;
+
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+
+public class MyBoundedQueue<E> extends ArrayDeque<E>{
+	private int elementsCapacity;
+	
+	public MyBoundedQueue(int elementsCapacity) {
+		this.elementsCapacity = elementsCapacity;
+	}
+	@Override
+	public boolean offer(E e) {
+		if (this.size() < elementsCapacity) {
+            super.offer(e);
+            return true;
+        } else {
+            this.poll();
+            super.offer(e);
+            return false;
+        }
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		for (E element: this) {
+			sb.append(element + ", ");
+		}
+		return sb.substring(0, size());
+	}
+}

@@ -1,0 +1,41 @@
+package com.corejava.structureddata;
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+import java.io.File;
+import java.io.IOException;
+
+public class ParseWithDOMParser {
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        try {
+            File fXmlFile = new File("xmlInShort.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder;
+            dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(fXmlFile);
+            doc.getDocumentElement().normalize();
+            
+            System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);
+     
+        //Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+       
+     
+    }
+    
+}

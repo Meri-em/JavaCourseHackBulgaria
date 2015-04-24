@@ -1,0 +1,27 @@
+{
+  "C:\\Program Files\\Java\\jre1.8.0_25\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_25\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "D:\\HackBulgaria\\Core-Java-Projects\\OOP1\\Time\\src": {
+    "location": "D:\\HackBulgaria\\Core-Java-Projects\\OOP1\\Time\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\HackBulgaria\\Core-Java-Projects\\OOP1\\Time\\src\u0027. Skipped."
+  },
+  "D:\\HackBulgaria\\Core-Java-Projects\\Collections\\src": {
+    "location": "D:\\HackBulgaria\\Core-Java-Projects\\Collections\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\HackBulgaria\\Core-Java-Projects\\Collections\\src\u0027. Skipped."
+  },
+  "D:\\HackBulgaria\\Core-Java-Projects\\X\\src": {
+    "location": "D:\\HackBulgaria\\Core-Java-Projects\\X\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\HackBulgaria\\Core-Java-Projects\\X\\src\u0027. Skipped."
+  },
+  "D:\\HackBulgaria\\Core-Java-Projects\\StructuredData\\src": {
+    "location": "D:\\HackBulgaria\\Core-Java-Projects\\StructuredData\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\HackBulgaria\\Core-Java-Projects\\StructuredData\\src\u0027. Skipped."
+  }
+}

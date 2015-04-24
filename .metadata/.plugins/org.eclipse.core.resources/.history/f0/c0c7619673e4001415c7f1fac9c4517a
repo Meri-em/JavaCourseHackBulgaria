@@ -1,0 +1,95 @@
+package com.corejava.structureddata;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.XMLStreamWriter;
+
+import org.codehaus.jettison.json.JSONException;
+import org.codehaus.jettison.json.JSONObject;
+import org.codehaus.jettison.mapped.MappedNamespaceConvention;
+import org.codehaus.jettison.mapped.MappedXMLStreamReader;
+import org.codehaus.jettison.mapped.MappedXMLStreamWriter;
+
+
+
+public class Main {
+    private static final String ACOREJAVAXML = "aCoreJavaCourseMashalled.xml";
+    
+    public static void main(String[] args) {
+        
+        long start = System.currentTimeMillis();
+       
+        List<Student> coreJavaStudents =  new ArrayList<Student>();
+        Student student1 = new Student();
+        Student student2 = new Student();
+        Student student3 = new Student();
+        student1.setStudentId(1129);
+        student1.setName("Darina Miteva");
+        student2.setStudentId(1160);
+        student2.setName("Nikola Dimitrov");
+        student3.setStudentId(1180);
+        student3.setName("Miroslav Nenov");
+        CoreJavaCourse aCoreJavaCourse = new CoreJavaCourse();
+        coreJavaStudents.add(student1);
+        coreJavaStudents.add(student2);
+        coreJavaStudents.add(student3);
+        aCoreJavaCourse.enrolledStudents = coreJavaStudents;
+        aCoreJavaCourse.courseId = 6789;
+        aCoreJavaCourse.courseName = "CoreJava";
+
+        
+        try {
+            //XML
+            JAXBContext context = JAXBContext.newInstance(CoreJavaCourse.class);
+            Marshaller m = context.createMarshaller();
+            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+            m.marshal(aCoreJavaCourse, new File(ACOREJAVAXML));
+            
+            Unmarshaller um = context.createUnmarshaller();
+            CoreJavaCourse umCoreJavaCourse =(CoreJavaCourse) um.unmarshal(new FileReader(ACOREJAVAXML));
+            System.out.println(umCoreJavaCourse);
+            
+            //JSON
+            MappedNamespaceConvention con = new MappedNamespaceConvention();
+            Writer writer = new OutputStreamWriter(System.out);
+            XMLStreamWriter xmlStreamWriter = new MappedXMLStreamWriter(con, writer);
+     
+//            Marshaller marshaller = context.createMarshaller();
+            m.marshal(aCoreJavaCourse, xmlStreamWriter);
+            
+//            System.out.println();
+//            
+//            String jsonString = "{\"coreJavaCourse\":{\"courseId\":0,\"courseName\":\"CoreJava\",\"enrolledStudents\":[{\"name\":\"Darina Miteva\",\"studentId\":1129},{\"name\":\"Nikola Dimitrov\",\"studentId\":1160},{\"name\":\"Miroslav Nenov\",\"studentId\":1187}]}}";
+//            JSONObject obj = new JSONObject(jsonString);
+//            XMLStreamReader xmlStreamReader = new MappedXMLStreamReader(obj, con);
+//            Unmarshaller unmarshaller = context.createUnmarshaller();
+//            CoreJavaCourse javaCourseUmJSON = (CoreJavaCourse) unmarshaller.unmarshal(xmlStreamReader);
+//            System.out.println("The course id of CoreJava is: " + javaCourseUmJSON.courseId);
+            
+            
+        } catch (JAXBException e) {
+            
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } 
+//        catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (XMLStreamException e) {
+//            e.printStackTrace();
+//        }
+        
+    }
+}

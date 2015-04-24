@@ -1,0 +1,33 @@
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlRootElement
+@XmlType(propOrder = { "name", "facultyNumber" })
+public class Student { 
+    private int facultyNumber;
+    private String name; 
+    
+    public Student(int facultyNumber, String name) {
+    	this.facultyNumber = facultyNumber;
+    	this.name = name;
+    }
+    
+    public Student() {
+    	
+    }
+    
+    public int getFacultyNumber() {
+        return facultyNumber;
+    }
+//    public void setFacultyNumber(int studentId) {
+//        this.facultyNumber = studentId;
+//    }
+    
+    public String getName() {
+        return name;
+    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+}

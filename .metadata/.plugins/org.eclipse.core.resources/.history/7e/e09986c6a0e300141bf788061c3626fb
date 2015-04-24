@@ -1,0 +1,11 @@
+
+public class D {
+
+	public static void main(String[] args) {
+		System.out.printf("%n");
+		System.out.println("dd");
+		String b = String.format("dddddd %n laihlag");
+		System.out.println(b);
+	}
+
+}

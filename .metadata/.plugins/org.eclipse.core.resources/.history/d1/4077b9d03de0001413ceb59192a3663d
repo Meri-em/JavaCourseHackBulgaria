@@ -1,0 +1,58 @@
+package com.corejava.structureddata;
+
+import java.util.List;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class CoreJavaCourse {
+    
+   
+    List<Student> enrolledStudents;
+    int courseId;
+    String courseName;
+    
+    @XmlElement
+    public List<Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
+
+
+    public void setEnrolledStudents(List<Student> enrolledStudents) {
+        this.enrolledStudents = enrolledStudents;
+    }
+
+    @XmlElement
+    public int getCourseId() {
+        return courseId;
+    }
+
+
+    public void setCourseId(int courseId) {
+        this.courseId = courseId;
+    }
+
+    @XmlElement
+    public String getCourseName() {
+        return courseName;
+    }
+
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    @Override
+    public String toString(){
+        String result = "The enrolled students are: \n";
+        List<Student> javaStudents = getEnrolledStudents();
+        for (Student st : javaStudents) {
+          result += st.studentId + " " + st.name + '\n';
+        }
+        return result + "courseId: " + getCourseId() + "\ncourseName: " + getCourseName() + '\n'; 
+    }
+    
+    
+    
+
+}
